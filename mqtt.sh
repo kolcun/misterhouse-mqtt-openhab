@@ -6,11 +6,19 @@ trimmedItem=${1:1}
 
 #Misterhouse Item -> OpenHab Item
 items["Bookshelf"]=Bookshelf_Light
-#items["Pool_Light"]=Pool_Light
-#items["Master_Fan"]=
-#items["Master_Light"]=
 items["Landscape_Lights"]=Landscape_Light
-#items[""]=
+items["Laundry_Room_Lights"]=Laundry_Room
+items["Family_Room_Main_Pot_Lights"]=Family_Room
+items["Family_Room_Fireplace_Pot_Lights"]=Family_Room_Fireplace
+items["Family_Room_Window_Pot_Lights"]=Family_Room_Accent
+items["Living_Room_Pot_Lights"]=Living_Room_Accent
+items["Front_Door_Keypad_Ext_Light"]=Exterior_Lights
+items["Upstairs_Landing_Keypad_Light"]=Upstairs_Lights
+items["Basement_Stairs_Top"]=Basement_Foyer
+items["Front_Hall_Hall_Side"]=Main_Hallway
+items["Pool_Gas_Heater"]=Pool_Heater
+
+
 
 #look for an item in the map
 item=${items[$trimmedItem]}
