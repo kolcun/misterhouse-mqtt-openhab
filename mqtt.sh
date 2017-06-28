@@ -4,11 +4,12 @@ declare -A items
 
 trimmedItem=${1:1}
 
+#Misterhouse Item -> OpenHab Item
 items["Bookshelf"]=Bookshelf_Light
 #items["Pool_Light"]=Pool_Light
-items["Master_Fan"]=
-items["Master_Light"]=
-#items[""]=
+#items["Master_Fan"]=
+#items["Master_Light"]=
+items["Landscape_Lights"]=Landscape_Light
 #items[""]=
 
 #look for an item in the map
