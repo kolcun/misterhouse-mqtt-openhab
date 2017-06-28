@@ -17,7 +17,7 @@ items["Upstairs_Landing_Keypad_Light"]=Upstairs_Lights
 items["Basement_Stairs_Top"]=Basement_Foyer
 items["Front_Hall_Hall_Side"]=Main_Hallway
 items["Pool_Gas_Heater"]=Pool_Heater
-
+items["Upstairs_Hallway"]=Bookshelf_Light
 
 
 #look for an item in the map
@@ -49,5 +49,5 @@ fi
 
 if ! [[ ! $item ]]; then
 	`mosquitto_pub -h 52.90.29.252 -u kolcun -P MosquittoMQTTPassword\\$isVeryLong123 -t kolcun/indoor/openhab/in/$item/state -m $state`
-	echo "exec $0 :: $item :: $state"
+	echo "exec $0 :: $item :: $state -- $1 -- $2"
 fi
