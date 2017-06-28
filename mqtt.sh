@@ -2,10 +2,23 @@
 
 declare -A items
 
-items["\$Bookshelf"]=Bookshelf_Light
-items["\$Pool_Light"]=Pool_Light
+trimmedItem=${1:1}
 
-item=${items[$1]}
+items["Bookshelf"]=Bookshelf_Light
+#items["Pool_Light"]=Pool_Light
+items["Master_Fan"]=
+items["Master_Light"]=
+#items[""]=
+#items[""]=
+
+#look for an item in the map
+item=${items[$trimmedItem]}
+
+#if not in the map, use the item as it was passed in
+if [[ $item = "" ]]
+then
+	item=$trimmedItem
+fi
 
 state=$2
 
