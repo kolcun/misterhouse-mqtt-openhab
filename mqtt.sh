@@ -48,6 +48,6 @@ fi
 
 
 if ! [[ ! $item ]]; then
-	`mosquitto_pub -h 52.90.29.252 -u kolcun -P MosquittoMQTTPassword\\$isVeryLong123 -t kolcun/indoor/openhab/in/$item/state -m $state`
+	`mosquitto_pub -h 54.156.244.62 -u kolcun -P MosquittoMQTTPassword\\$isVeryLong123 -t kolcun/indoor/openhab/in/$item/state -m $state`
 	echo "exec $0 :: $item :: $state -- $1 -- $2"
 fi
